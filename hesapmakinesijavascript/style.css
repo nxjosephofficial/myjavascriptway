@@ -1,0 +1,12 @@
+* {
+	margin:0px;
+	padding:0px;
+	height:100%;
+	box-sizing:border-box;
+}
+.container {
+	background-size:cover;
+	background-image:url("./background-image.jpeg");
+	background-repeat:no-repeat;
+	background-position:center;
+}
