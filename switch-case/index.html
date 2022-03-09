@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+body {text-align:center;}
+</style>
+<meta charset="utf-8">
+<title>Switch Case JS</title>
+</head>
+<body>
+<script>
+var color;
+var text;
+color = prompt("Choose the color for your text: "+"1 for red, 2 for green, 3 for blue.");
+text = prompt("Enter the text.");
+switch(color)
+{
+	case color="1":
+	document.write("<font color='red'>"+text+"</font>");
+	break;
+	
+	case color="2":
+	document.write("<font color='green'>"+text+"</font>");
+	break;
+	
+	case color="3":
+	document.write("<font color='blue'>"+text+"</font>");
+	break;
+	
+	default:
+	alert("Invalid color value :( ");
+	break;
+}
+</script>
+</body>
+</html>
