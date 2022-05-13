@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Search</title>
+    <style>
+        #srch-btn {
+            background-image: url('../Downloads/search-logo.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border: none;
+            margin-top: 1px;
+            margin-left: 5px;
+            width: 20px;
+            height: 20px;
+            display: block;
+            float: left;
+            transition: 300ms;
+        }
+        #srch-btn:hover {
+            opacity: 0.7;
+            cursor: pointer;
+            transition: 300ms;
+        }
+        input[type=text] {
+            float: left;
+        }
+        .align {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <script>
+    function hidetext() {
+        if ( document.form1.k1.value=="Search..." ) {
+        document.form1.k1.value="";
+    }
+}
+    function visibletext() {
+        if ( document.form1.k1.value=="" ) {
+            document.form1.k1.value="Search...";
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="align">
+    <form action="" name="form1" method="post">
+        <input type="text" name="k1" value="Search..." onfocus="hidetext()" onblur="visibletext()">
+        <input type="submit" value="" id="srch-btn">
+    </form>
+</div>
+</body>
+</html>
